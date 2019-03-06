@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.game {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.game_body {
+    width: 65%;
+}
+
+.game_text {
+    width: 35%;
+}
+
+.game_body_row {
+    width: 100%;
+    display: block;
+}
+
+.game_body_row_row {
+    width: 100%;
+    display: flex;
+}
+
+.game_body_column {
+    position: relative;
+    width: calc(6.66% - 2px);
+    border: 1px solid orange;
+    background: yellow;
+}
+
+.game_body_column_number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.game_input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.game_input:active,
+.game_input:focus {
+    background: grey;
+}
+
+#game_questions {
+    border: 3px solid black;
+    background: grey;
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+    z-index: 999;
+}
+
+#game_questions td {
+    padding: 8px;
+}
+
+.hover {
+    background-color: #ddd;
+}
+
+#game_questions tr,
+#game_questions td {
+    border: 1px solid black;
+}
+
+.game_result {
+    margin-top: 25px;
+    width: calc(100% - 4px);
+    display: flex;
+    background-color: green;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid orange;
+}
+
+.game_result_password {
+    font-weight: bold;
+}
+
+.game_result_password,
+.game_result_truepassword {
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.game_result_truepassword_number {
+    position: absolute;
+    font-size: 20px;
+    top: 5;
+    left: 0;
+}
